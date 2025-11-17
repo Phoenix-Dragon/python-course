@@ -67,11 +67,7 @@ print(end_with_consonant(fruits))
 # OUTPUT : 7
 
 def words_count(sentence:str) -> int:
-    count = 0
-    sentence_without_space = sentence.replace("'", ' ').split(' ')
-    for word in sentence_without_space:
-        count += 1
-    return count
+    return len(sentence.strip().replace("'", ' ').split(' '))
 
 # Exemple
 sentence = "J'adore la langage de programmation Python"
