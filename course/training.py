@@ -109,11 +109,9 @@ print(get_largest_gap(marks))
 
 def get_ages_average(users:list[dict]) -> float:
     sum_of_ages = 0
-    count = 0
     for user in users:
         sum_of_ages += user['age']
-        count += 1
-    return round(sum_of_ages/count, 2)
+    return round(sum_of_ages/len(users), 2)
 
 
 
