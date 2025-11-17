@@ -68,10 +68,8 @@ print(end_with_consonant(fruits))
 
 def words_count(sentence:str) -> int:
     count = 0
-    sentence_without_space = sentence.split(" ")
+    sentence_without_space = sentence.replace("'", ' ').split(' ')
     for word in sentence_without_space:
-        if "'" in word:
-            count += 1
         count += 1
     return count
 
