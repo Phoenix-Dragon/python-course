@@ -9,7 +9,7 @@ def reduction(prices:list[str], number_reduction:int) ->list[float]:
         price_with_point = price_without_euro.replace(',', '.')
         price_with_float = float(price_with_point)
         price_with_reduction = round(price_with_float * number_reduction, 2)
-        prices_discounted.append(price_with_reduction)
+        prices_discounted.append(str(price_with_reduction).replace('.', ',') + "€")
     return prices_discounted
 
 # Exemple
