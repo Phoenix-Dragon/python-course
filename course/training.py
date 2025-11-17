@@ -52,7 +52,7 @@ print(dictionnarisation(emails))
 
 def end_with_consonant(fruits:list[str]) -> list[str]:
     fruits_end_with_consonant = []
-    voyels = ['a', 'e', 'i', 'o', 'u', 'y']
+    voyels = ['aeiouyAEIOUY']
     for fruit in fruits:
         if fruit[-1] not in voyels:
             fruits_end_with_consonant.append(fruit)
